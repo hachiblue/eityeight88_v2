@@ -23,7 +23,7 @@
 	<?php require APP . 'view/_templates/style.php'; ?>
 
 </head>
-<body>
+<body class="">
 
 <?php require APP . 'view/_templates/header.php'; ?>
 
