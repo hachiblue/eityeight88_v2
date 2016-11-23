@@ -1,52 +1,75 @@
 
 
-<div class="container">	
-
-	<!-- Swiper -->
-    <div class="swiper-container hidden-md hidden-lg text-center">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">BRAND</div>
-            <div class="swiper-slide">PRODUCT</div>
-            <div class="swiper-slide">NEWBEST</div>
-            <div class="swiper-slide">EVENT</div>
-            <div class="swiper-slide">MEDIA</div>
-            <div class="swiper-slide">REVIEW</div>
-        </div>
-    </div>
-
-	<!-- Swiper -->
-    <div class="swiper-paralax-container hidden-xs hidden-sm text-center">
-        <div class="parallax-bg" style="background-image:url(http://lorempixel.com/900/600/nightlife/2/)" data-swiper-parallax="-23%"></div>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="title" data-swiper-parallax="-100">Slide 1</div>
-                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-                <div class="text" data-swiper-parallax="-300">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="title" data-swiper-parallax="-100">Slide 2</div>
-                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-                <div class="text" data-swiper-parallax="-300">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="title" data-swiper-parallax="-100">Slide 3</div>
-                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-                <div class="text" data-swiper-parallax="-300">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination swiper-pagination-white"></div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-prev swiper-button-white"></div>
-        <div class="swiper-button-next swiper-button-white"></div>
-    </div>
 	
+	<div id="fixo_content">
 
+		<div id="fixoMainSlide" class="hidden-md hidden-lg">
+			<div class="swiper-slide-container swiper-container-horizontal">
+			  <div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="/product/detail.html?product_no=173&amp;cate_no=79&amp;display_group=1">
+						<img src="http://m.16brand.com/postfixo/images/banner_001.jpg" alt="메인이미지01">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="/product/detail.html?product_no=173&amp;cate_no=79&amp;display_group=1">
+						<img src="http://m.16brand.com/postfixo/images/banner_002.jpg" alt="메인이미지02">
+					</a>
+				</div>
+			</div>
 
-</div><!-- /.container -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+	</div>
+
+	<div id="fixoSlide" class="flexslider hidden-xs hidden-sm">
+		<ul class="slides">
+			<li class="slides_bg1 fixo-active-slide">
+				<div class="box">
+					<div class="left_content" style="left: 100px; opacity: 1;">
+						<p class="img">
+							<img src="http://16brand.com/postfixo/images/tmp_imsi.png" alt="left" draggable="true">
+						</p>
+						<h3><img src="http://16brand.com/postfixo/images/txt_001.png" draggable="true"></h3>
+						<p class="sub_txt">
+							<img src="http://16brand.com/postfixo/images/txt_001_001.png" draggable="true">
+						</p>
+						<p>
+							<a href="/product/detail.html?product_no=183&amp;cate_no=42&amp;display_group=1">
+								<img src="http://16brand.com/postfixo/images/btn_go.png" draggable="true">
+							</a>
+						</p>
+					</div>
+					<p class="right_content" style="right: 0px; opacity: 1;">
+						<a href="/product/detail.html?product_no=183&amp;cate_no=42&amp;display_group=1">
+							<img src="http://16brand.com/postfixo/images/main_visual_01.jpg" alt="right" draggable="true">
+						</a>
+					</p>
+				</div>
+			</li>
+			<li class="slides_bg1 fixo-active-slide">
+				<div class="box">
+					<div class="left_content" style="left: 100px; opacity: 1;">
+						<p class="img">
+							<img src="http://16brand.com/postfixo/images/tmp_imsi.png" alt="left" draggable="true">
+						</p>
+						<h3><img src="http://16brand.com/postfixo/images/txt_001.png" draggable="true"></h3>
+						<p class="sub_txt">
+							<img src="http://16brand.com/postfixo/images/txt_001_001.png" draggable="true">
+						</p>
+						<p>
+							<a href="/product/detail.html?product_no=183&amp;cate_no=42&amp;display_group=1">
+								<img src="http://16brand.com/postfixo/images/btn_go.png" draggable="true">
+							</a>
+						</p>
+					</div>
+					<p class="right_content" style="right: 0px; opacity: 1;">
+						<a href="/product/detail.html?product_no=183&amp;cate_no=42&amp;display_group=1">
+							<img src="http://16brand.com/postfixo/images/main_visual_01.jpg" alt="right" draggable="true">
+						</a>
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>

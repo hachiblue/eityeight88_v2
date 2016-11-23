@@ -1,7 +1,13 @@
 body {
-  	padding-top: 50px;
   	font-family: 'Open Sans', Arial, sans-serif;
     font-size: 13px;
+}
+
+.wraper {
+	overflow: hidden;
+    position: relative;
+    min-height: 100%;
+    width: 100%;
 }
 
 li {
@@ -107,7 +113,7 @@ a.btn2:hover {
 	height: 100%;
 	background: #000;
 }
-.swiper-slide {
+.swiper-paralax-container .swiper-slide {
 	font-size: 18px;
 	color:#fff;
 	-webkit-box-sizing: border-box;
@@ -124,14 +130,14 @@ a.btn2:hover {
 	background-size: cover;
 	background-position: center;
 }
-.swiper-slide .title {
+.swiper-paralax-container .swiper-slide .title {
 	font-size: 41px;
 	font-weight: 300;
 }
-.swiper-slide .subtitle {
+.swiper-paralax-container .swiper-slide .subtitle {
 	font-size: 21px;
 }
-.swiper-slide .text {
+.swiper-paralax-container .swiper-slide .text {
 	font-size: 14px;
 	max-width: 400px;
 	line-height: 1.3;
@@ -174,10 +180,216 @@ a.btn2:hover {
 	
 	.logo {
 		border-bottom: 1px solid #e5e5e5;
+		padding-top: 45px;
 	}
 
     .logo img {
 		margin: 5px auto;
 		max-width: 50px;
 	}	
+}
+
+
+
+#wrap #fixo_content {
+    position: relative;
+    padding: 0;
+}
+
+#fixoMainSlide {
+    position: relative;
+    margin: 0 0 3.1%;
+}
+
+#fixoMainSlide .swiper-slide-container img {
+    width: 100%;
+}
+
+#fixoMainSlide .pagination {
+    position: absolute;
+    z-index: 10;
+    margin: 0;
+    bottom: 10px;
+    left: 0;
+    height: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#fixoMainSlide .pagination .swiper-pagination-bullet {
+    background: url(/postfixo/images/btn_navi.png) -10px 0;
+    background-size: auto 10px;
+    vertical-align: top;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    vertical-align: top;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#fixoMainSlide .pagination .swiper-pagination-bullet-active {
+    background-position: 0 0;
+}
+
+
+#fixoSlide {
+    position: relative;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
+    width: 100%;
+    height: 850px;
+}
+
+#fixoSlide .slides li.slides_bg1 {
+    background: #f9ebf3;
+}
+
+#fixoSlide .slides li.slides_bg2 {
+    background: #f9ebf3;
+}
+
+#fixoSlide .slides li .box {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#fixoSlide .slides li .box .left_content {
+    position: absolute;
+    top: 25%;
+    left: 50px;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#fixoSlide .slides li .box .right_content {
+    position: relative;
+    top: 0;
+    right: -100px;
+    z-index: 1;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#fixoSlide .slides li .box .img {
+    margin-bottom: 20px;
+}
+
+#fixoSlide .slides li .box .img img {
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+    zoom:1;}
+
+#fixoSlide .slides li .box h3 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #313031;
+    line-height: 54px;
+}
+
+#fixoSlide .slides li .box h3 span {
+    font-weight: 700;
+}
+
+#fixoSlide .slides li .box .sub_txt {
+    margin: 10px 0 30px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#fixoSlide .slides li .box .btn a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background: #55565a;
+    font-size: 13px;
+    color: #fff;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+#fixoSlide .slides li .box .btn a:hover {
+    background: #000000;
+}
+
+#fixoSlide .flex-direction-nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1100px;
+    height: 850px;
+    margin: 0 -550px;
+}
+
+#fixoSlide .flex-direction-nav .flex-prev,#fixoSlide .flex-direction-nav .flex-next {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 31px;
+    height: 62px;
+    display: block;
+    cursor: pointer;
+    opacity: 1;
+    font-size: 0;
+    line-height: 0;
+}
+
+#fixoSlide .flex-direction-nav .flex-prev {
+    background: url(http://16brand.com/postfixo/images/main_visual_left.png) no-repeat center;
+    left: 0;
+}
+
+#fixoSlide .flex-direction-nav .flex-next {
+    background: url(http://16brand.com/postfixo/images/main_visual_right.png) no-repeat center;
+    right: 0;
+}
+
+#fixoSlide .flex-control-nav {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    z-index: 10;
+    width: 1100px;
+    height: 15px;
+    margin: 0 -550px;
+    text-align: center;
+}
+
+#fixoSlide .flex-control-nav li {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 0;
+    letter-spacing: 0;
+    line-height: 0;
+}
+
+#fixoSlide .flex-control-nav li a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+#fixoSlide .flex-control-nav li a.flex-active {
+    background: #424242;
+}
+
+.flex-direction-nav a:before {
+    content: '';
+}
+
+.flex-direction-nav a.flex-next:before {
+    content: '';
+}
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
 }
