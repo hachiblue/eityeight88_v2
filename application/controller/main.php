@@ -18,7 +18,6 @@ class Main extends Controller
     {
 		$_URL = URL . $_SESSION["Lang"] . "/";
 
-        $products = $this->model->getproducts();
         $banner = $this->model->getbanner("Home");
 
         // load views
