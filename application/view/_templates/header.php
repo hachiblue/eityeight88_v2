@@ -1,64 +1,95 @@
 
 <div id="fixoHeader">
-	<header>
-		
-		<nav class="navbar navbar-inverse">
-			<div class="container">
 
-				<div class="navbar-header">
+	<div class="section clear">
 
-					<button type="button" class="navbar-toggle offcanvas-toggle pull-left" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+		<header>
+			
+			<nav class="navbar navbar-inverse">
+				<div class="container">
 
-					<div class="hidden-md hidden-lg mgr10">
-						<ul class="inner pull-right">
-							<li class="fl"><a href="/member/login.html"><i class="fa fa-facebook"></i></a></li>
-							<li class="fl"><a href="/member/join.html"><i class="fa fa-instagram"></i></a></li>
-							<li class="fl"><a href="/member/join.html"><i class="fa fa-youtube-play"></i></a></li>
+					<div class="navbar-header">
+
+						<button type="button" class="navbar-toggle offcanvas-toggle pull-left" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<div class="hidden-md hidden-lg mgr10">
+							<ul class="inner pull-right">
+								<li class="fl"><a href="/member/login.html"><i class="fa fa-facebook"></i></a></li>
+								<li class="fl"><a href="/member/join.html"><i class="fa fa-instagram"></i></a></li>
+								<li class="fl"><a href="/member/join.html"><i class="fa fa-youtube-play"></i></a></li>
+								<li class="fl"><a href="/order/basket.html" class="qtrans_flag_en qtrans_flag_and_text"></a></li>
+								<li class="fl"><a href="/order/basket.html" class="qtrans_flag_th qtrans_flag_and_text"></a></li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="container-fluid">
+						<ul class="nav navbar-nav top-nav hidden-sm hidden-xs">
+							<li class="active"><a href="#" class="no-padd">EityEight</a></li>
+							<!-- <li><a href="#about" class="no-padd">wonderbath</a></li> -->
+						</ul>
+
+						<ul class="inner pull-right hidden-sm hidden-xs">
+							<li class="fl"><a href="/member/login.html" class="txt"><i class="fa fa-facebook"></i></a></li>
+							<li class="fl"><a href="/member/join.html" class="txt"><i class="fa fa-instagram"></i></a></li>
+							<li class="fl"><a href="/member/join.html" class="txt"><i class="fa fa-youtube-play"></i></a></li>
 							<li class="fl"><a href="/order/basket.html" class="qtrans_flag_en qtrans_flag_and_text"></a></li>
 							<li class="fl"><a href="/order/basket.html" class="qtrans_flag_th qtrans_flag_and_text"></a></li>
 						</ul>
 					</div>
 
+					
+
+					<!--/.nav-collapse -->
 				</div>
+			</nav>
 
-				<div class="container-fluid">
-					<ul class="nav navbar-nav top-nav hidden-sm hidden-xs">
-						<li class="active"><a href="#" class="no-padd">EityEight</a></li>
-						<!-- <li><a href="#about" class="no-padd">wonderbath</a></li> -->
-					</ul>
+		</header>
 
-					<ul class="inner pull-right hidden-sm hidden-xs">
-						<li class="fl"><a href="/member/login.html" class="txt"><i class="fa fa-facebook"></i></a></li>
-						<li class="fl"><a href="/member/join.html" class="txt"><i class="fa fa-instagram"></i></a></li>
-						<li class="fl"><a href="/member/join.html" class="txt"><i class="fa fa-youtube-play"></i></a></li>
-						<li class="fl"><a href="/order/basket.html" class="qtrans_flag_en qtrans_flag_and_text"></a></li>
-						<li class="fl"><a href="/order/basket.html" class="qtrans_flag_th qtrans_flag_and_text"></a></li>
-					</ul>
-				</div>
-
-				
-
-				<!--/.nav-collapse -->
+		<div class="logo">
+			<div class="container">
+				<ul class="col-xs-12">
+					<li class="pdlr20 pdt10">
+						<a href="#">
+							<img alt="http://eityeight.com/en/" class="img-responsive logo-img" src="/img/logo.gif">
+						</a>
+					</li>
+				</ul>
 			</div>
-		</nav>
-
-	</header>
-
-	<div class="logo">
-		<div class="container">
-			<ul class="col-xs-12">
-				<li class="pdlr20 pdt10">
-					<a href="#">
-						<img alt="http://eityeight.com/en/" class="img-responsive logo-img" src="/img/logo.gif">
-					</a>
-				</li>
-			</ul>
 		</div>
+		
+		
+		<div class="top hidden-xs hidden-sm" style="position: relative;">
+			<div class="inner" style="overflow: hidden; height: 60px;">
+				<nav>
+					<ul class="gnb">
+						<li>
+							<a href="/newpage/about16.html">Home</a>
+						</li>
+						<li>
+							<a href="/newpage/about16.html">About Us</a>
+						</li>
+						<li>
+							<a href="/newpage/about16.html">Products</a>
+						</li>
+						<li>
+							<a href="/newpage/about16.html">Contact Us</a>
+						</li>
+						<li>
+							<a href="/newpage/about16.html">CHECK CODE FOR INDONESIA</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="bg"></div>
+			</div>
+		</div>
+	
 	</div>
 
 	<div class="swiper">

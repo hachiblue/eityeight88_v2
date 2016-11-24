@@ -176,11 +176,13 @@ a.btn2:hover {
 	margin-top: 60px;
 }
 
+
+
 @media (max-width: 767px) {
 	
 	.logo {
 		border-bottom: 1px solid #e5e5e5;
-		padding-top: 45px;
+		padding-top: 0px;
 	}
 
     .logo img {
@@ -190,7 +192,12 @@ a.btn2:hover {
 }
 
 
-
+@media screen and (max-width: 480px)  
+{
+    .logo {
+		padding-top: 45px;
+	} 
+}
 #wrap #fixo_content {
     position: relative;
     padding: 0;
@@ -244,12 +251,16 @@ a.btn2:hover {
     height: 850px;
 }
 
+#fixo_content {
+	background: #f9ebf3;
+}
+
 #fixoSlide .slides li.slides_bg1 {
     background: #f9ebf3;
 }
 
 #fixoSlide .slides li.slides_bg2 {
-    background: #f9ebf3;
+    background: #e6e3e5;
 }
 
 #fixoSlide .slides li .box {
@@ -387,6 +398,90 @@ a.btn2:hover {
 
 .flex-direction-nav a.flex-next:before {
     content: '';
+}
+
+.flexslider {
+	border: none;
+}
+
+#fixoHeader .section .top {
+    letter-spacing: -0.01em;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#fixoHeader .section .top .inner {
+    width: 100%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+
+#fixoHeader .section .top .inner .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+#fixoHeader .section .top .gnb {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+#fixoHeader .section .top .gnb > li {
+    float: left;
+    position: relative;
+    text-align: left;
+}
+
+#fixoHeader .section .top .gnb > li > a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    color: #363636;
+    font-size: 15px;
+    padding: 0 25px;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+#fixoHeader .section .top .gnb > li:hover > a,#fixoHeader .section .top .gnb > li.active > a {
+    color: #ff7db9;
+}
+
+#fixoHeader .section .top .gnb li ul {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    padding-left: 25px;
+}
+
+#fixoHeader .section .top .gnb li ul li {
+    letter-spacing: -0.01em;
+}
+
+#fixoHeader .section .top .gnb li ul li a {
+    display: block;
+    font-size: 13px;
+    color: #636363;
+    white-space: nowrap;
+    line-height: 20px;
+}
+
+#fixoHeader .section .top .gnb li ul li:hover a,#fixoHeader .section .top .gnb li ul li.active a {
+    text-decoration: underline;
+    color: #000000;
 }
 
 #wrap {
