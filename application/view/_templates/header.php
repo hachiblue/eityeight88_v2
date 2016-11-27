@@ -67,6 +67,8 @@
 		
 		<div class="top hidden-xs hidden-sm" style="position: relative;">
 			<div class="inner" style="overflow: hidden; height: 60px;">
+
+				<div class="container pd0">
 				<nav>
 					<ul class="gnb">
 						<li>
@@ -87,6 +89,7 @@
 					</ul>
 				</nav>
 				<div class="bg"></div>
+				</div>
 			</div>
 		</div>
 	

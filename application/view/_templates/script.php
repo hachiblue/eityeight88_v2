@@ -19,6 +19,7 @@
 <script type="text/javascript">
 <!--
 	var _URL = '<?=$_URL;?>';
+	
 
 	$(document).ready(function () {
 		//initialize swiper when document ready  
@@ -84,6 +85,22 @@
 			$(".right_content").stop().animate({"right": "0", "opacity": "1"}, 3000, "easeOutQuad");
 		}
 
+		
+		/*
+		$("#fixoHeader .section .top .inner").mouseenter(function() {
+			$(this).stop().animate({"height":"250px"}, 400, "easeInOutExpo");
+		}).mouseleave(function(){
+			$(this).stop().animate({"height":"60px"}, 400, "easeInOutExpo");
+		});
+		*/
+
+		$(window).scroll(function() {
+			if($(this).scrollTop() > 130) {
+				$("#fixoHeader .section .top").css({"position":"fixed"});
+			} else {
+				$("#fixoHeader .section .top").css({"position":"relative"});
+			}
+		});
 
 	});
 
