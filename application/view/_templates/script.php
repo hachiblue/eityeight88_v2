@@ -27,8 +27,8 @@
 			loop: true,
 			slidesPerView: 3,
 			spaceBetween: 30,
-			nextButton: '.swiper-button-next',
-			prevButton: '.swiper-button-prev'
+			nextButton: '.swiper-bar-next',
+			prevButton: '.swiper-bar-prev'
 		})      
 		
 		var swiper_slide = new Swiper('.swiper-slide-container', {

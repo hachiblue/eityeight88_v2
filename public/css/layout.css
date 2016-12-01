@@ -1,6 +1,6 @@
 body {
-  	font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 13px;
+  	font-family: 'ee88-rg', 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
 }
 
 .wraper {
@@ -73,6 +73,15 @@ a.btn2:hover {
 	padding : 0px !important;
 }
 
+.text-elip {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+}
+
 #areaMenu {
 	min-height: 500px;
 	
@@ -87,12 +96,12 @@ a.btn2:hover {
 }
 
 #areaMenu > ul > li > a {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 14px;
     color: #111;
     letter-spacing: 2px;
-    font-family: 'Roboto',"Nanum Gothic",Gulim,sans-serif;
+    font-family: 'ee88-rg', sans-serif;
 }
 
 .qtrans_flag_en {
@@ -143,6 +152,12 @@ a.btn2:hover {
 	line-height: 1.3;
 }
 
+
+.prod_name { font-size:18px;color:#000000;font-weight:bold; }
+.prod_price { font-size:18px;color:#555555;font-style:italic; }
+
+.lft { left:0px; }
+.rht { right:0px; }
 
 .logo-img {
 	max-width:70px;
@@ -448,10 +463,10 @@ a.btn2:hover {
     height: 60px;
     line-height: 60px;
     color: #363636;
-    font-size: 15px;
+    font-size: 20px;
     padding: 0 25px;
     transition: 0.3s;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 #fixoHeader .section .top .gnb > li:hover > a,#fixoHeader .section .top .gnb > li.active > a {
@@ -489,7 +504,7 @@ a.btn2:hover {
     border-top: 1px solid #d0d0d0;
     text-align: center;
     color: #848585;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 
@@ -502,7 +517,7 @@ a.btn2:hover {
 #fixoFooter .xans-layout-footer #address {
     padding: 20px 0 5px;
     color: #b6b6b6;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 17px;
 }
 
@@ -522,6 +537,76 @@ a.btn2:hover {
 #fixoGridContent.prdList .name {
     padding: 0 10px;
 }
+
+
+
+#headImg {
+    width: 100%;
+    height: 488px;
+    margin: 0 0 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+#headImg .over_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 488px;
+}
+
+#headImg .txt {
+    position: relative;
+    z-index: 2;
+    width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#headImg .txt .mt {
+    display: block;
+    font-size: 34px;
+    color: #242424;
+    font-weight: 900;
+    line-height: 30px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+#headImg .txt .subt {
+    display: block;
+    font-size: 16px;
+    color: #242424;
+    line-height: 17px;
+}
+
+#headImg .top_img {
+    height: 488px;
+    text-align: center;
+    padding: 245px 0 0 0;
+    background-size: auto auto !important;
+    display: none;
+}
+
+#headImg .topimg_menu02 .txt,#headImg .topimg_menu03 .txt,#headImg .topimg_menu04 .txt {
+    display: none;
+}
+
+#headImg .top_img_brand {
+    height: 967px;
+    text-align: center;
+    padding: 245px 0 0 0;
+    background-size: auto auto !important;
+    display: none;
+}
+
+
+#headImg .top_img_prod {
+    background: #fbecf4 url("/xxx") no-repeat center 0;
+}
+
 
 .prdList { /* Masonry container */
 	margin: 1.5em 0;
@@ -566,10 +651,10 @@ a.btn2:hover {
 .tit_area {
     padding: 30px 0 20px;
     text-align: center;
-    font-family: 'Roboto',"Nanum Gothic",Dotum,Gulim,sans-serif;
+    font-family: 'ee88-rg', sans-serif;
 }
 
-.tit_area h3 {
+.tit_area h2 {
     display: block;
     letter-spacing: 4px;
     font-weight: 700;
@@ -577,17 +662,90 @@ a.btn2:hover {
     line-height: 20px;
 }
 
-.tit_area h3 span {
+.tit_area h2 span {
     font-weight: 400;
 }
 
 .tit_area span.subTit {
-    font-size: 6px;
+    font-size: 16px;
     letter-spacing: 1px;
     font-weight: 400;
     color: #999;
 }
 
+.breadcrumb {
+	background-color: #fff;
+	padding: 0px 5px 15px 5px;
+	border-bottom: 1px solid #e8e8e8;
+	font-size: 18px;
+}
+
+.function {
+    overflow: hidden;
+    text-align: right;
+    line-height: 38px;
+    border-top: 1px solid #333;
+}
+
+.prdCount {
+    float: left;
+    padding: 0 0 0 10px;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+.prdCount strong {
+    color: #000;
+}
+
+.sw_bar {
+	position: relative;
+	background: #fff; 
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+#titleArea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+#titleArea h2 {
+    padding: 0 61px;
+    line-height: 43px;
+    font-size: 15px;
+    color: #111;
+    text-align: center;
+    border-bottom: 1px solid #dbdcdc;
+}
+
+#titleArea .h4 {
+	border-bottom: 1px solid #dbdcdc;
+	height: 33px;
+	color: #111;
+}
+
+#titleArea span {
+    position: absolute;
+    top: 3px;
+    left: 14px;
+}
+
+#titleArea span.glyphicon  {
+	border: 1px solid #dbdcdc;
+	font-size: 14px;
+	color: #898e8e;
+	padding: 6px;
+}
+
+#titleArea span.sale,#titleArea span.best {
+    position: relative;
+    top: 0;
+    left: 0;
+}
 
 #fixoFooter .ft_sc1 div {
 	width: 12px;
@@ -712,7 +870,7 @@ footer .quick_menu li:nth-child(8) a {
 footer .policy {
     text-align: center;
     margin: 0 0 30px;
-    font-family: 'Roboto',"Nanum Gothic","맑은 고딕","Malgun Gothic",돋움,굴림,Dotum,Gulim,sans-serif;
+    font-family: 'ee88-rg', sans-serif;
 }
 
 footer .policy li,footer .policy li a {
@@ -764,7 +922,7 @@ footer .cs_center {
 
 footer .cs_center .num_tel {
     margin-bottom: 20px;
-    font-family: 'Roboto',"Nanum Gothic","맑은 고딕","Malgun Gothic",돋움,굴림,Dotum,Gulim,sans-serif;
+    font-family: 'ee88-rg', sans-serif;
 }
 
 footer .cs_center .num_tel,footer .cs_center .num_tel a {
@@ -838,6 +996,9 @@ address p.design,address p.design a {
     color: #999;
 }
 
+.body_contain {
+	position: relative;
+}
 
 .ft_bx_social {
     padding: 20px 0 5px;
@@ -858,6 +1019,15 @@ address p.design,address p.design a {
 	.body_contain {
 		margin: 0px;
 	}
+
+	.prdList { /* Masonry container */
+		margin: 3.5em 0;
+		padding: 0;
+		-moz-column-gap: 3.5em;
+		-webkit-column-gap: 3.5em;
+		column-gap: 3.5em;
+		font-size: .85em;
+	}
 }
 
 
@@ -875,4 +1045,22 @@ address p.design,address p.design a {
 		font-size: 18px;
 	}
 
+}
+
+@font-face {
+    font-family: ee88-rg;
+    src: url(/fonts/EityEight_Regular_ver_1_00.otf) format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: ee88-li;
+    src: url(/fonts/EityEight_Light_ver_1_00.otf) format('opentype');
+	font-weight: lighter;
+}
+
+@font-face {
+    font-family: ee88-bd;
+    src: url(/fonts/EityEight_Bold_ver_1_00.otf) format('opentype');
+	font-weight: bold;
 }
