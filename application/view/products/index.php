@@ -6,7 +6,7 @@
 	</div>
 	<div class="top_img_prod top_img" style="display: block;">
 		<div class="txt base" style="display: block;">
-			<span class="mt">Product Item</span>
+			<span class="mt"><?=_PRODUCT_ITEM;?></span>
 			<span class="subt">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
 				Lorem ipsum dolor.
@@ -24,7 +24,7 @@
 
 		<ol class="breadcrumb text-right hidden-xs hidden-sm">
 		  <li><a href="<?=$_URL;?>"><?=_HOME;?></a></li>
-		  <li class="active">Product Item</li>
+		  <li class="active"><?=_PRODUCT_ITEM;?></li>
 		</ol>
 
 		<div class="function clear hidden-xs hidden-sm">
@@ -33,9 +33,11 @@
 		
 		<div class="hidden-md hidden-lg">
 			<div id="titleArea" class="xans-element- xans-product xans-product-headcategory ">
-				<div class="h4 text-center"><b>Product Item</b></div>
-				<span class="xans-element- xans-layout xans-layout-mobileaction "><a href="#none" onclick="history.go(-1);return false;">
-					<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+				<div class="h4 text-center"><b><?=_PRODUCT_ITEM;?></b></div>
+				<span class="xans-element- xans-layout xans-layout-mobileaction ">
+					<a href="#none" onclick="history.go(-1);return false;">
+						<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+					</a>
 				</span>
 			</div>
 		</div>

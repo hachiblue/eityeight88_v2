@@ -102,6 +102,38 @@
 			}
 		});
 
+		if( $("#btn-chkall-serial").length )
+		{
+			$("#btn-chkall-serial").click(function(){
+
+				chk_serial_all( $("#input-serial").val() );
+
+			});
+			
+		}
+
+		var chk_serial_all = function(data)
+		{
+			$.post(_URL+"products/ajax_chkserial_all", { pdata : data }, function(msg) {
+				
+				if( msg.FAKE )
+				{
+					$('#isfake').modal('show');
+				}
+				else if( msg.DUP )
+				{
+					$('#isdup').modal('show');
+				}
+				else if( !msg.FAKE )
+				{
+					$('#isreal').modal('show');
+					//alert( "This is " + msg.PRODNAME )
+				}
+				
+
+			}, 'json');
+		};
+
 	});
 
 //-->
