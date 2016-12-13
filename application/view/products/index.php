@@ -62,7 +62,7 @@
 					</p>
 				
 					<div class="pdlr10 pdb10">
-						<span class="prod_price">14,000฿</span>
+						<!-- <span class="prod_price">14,000฿</span> -->
 					</div>
 
 				</div>

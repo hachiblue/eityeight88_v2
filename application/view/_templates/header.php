@@ -36,6 +36,7 @@
 						</ul>
 
 						<ul class="inner pull-right hidden-sm hidden-xs">
+							
 							<li class="fl"><a href="https://www.facebook.com/ver.88officialThai?ref=bookmarks" class="txt"><i class="fa fa-facebook"></i></a></li>
 							<li class="fl"><a href="https://instagram.com/ver88official/" class="txt"><i class="fa fa-instagram"></i></a></li>
 							<li class="fl"><a href="https://www.youtube.com/channel/UCchLAlGdRStLn5RolkZeWaw/feed" class="txt"><i class="fa fa-youtube-play"></i></a></li>
@@ -103,12 +104,11 @@
 				<div class="swiper-container hidden-md hidden-lg text-center">
 					<div class="swiper-bar-prev swiper-arrow lft"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
 					<div class="swiper-wrapper">
-						<div class="swiper-slide">BRAND</div>
+						<div class="swiper-slide"><a href="<?=$_URL;?>"><?=_HOME;?></a></div>
+						<div class="swiper-slide"><a href="<?=$_URL;?>about"><?=_ABOUT_US;?></a></div>
 						<div class="swiper-slide"><a href="<?=$_URL;?>products"><?=_PRODUCTS;?></a></div>
-						<div class="swiper-slide">NEWBEST</div>
-						<div class="swiper-slide">EVENT</div>
-						<div class="swiper-slide">MEDIA</div>
-						<div class="swiper-slide">REVIEW</div>
+						<div class="swiper-slide"><a href="<?=$_URL;?>contact"><?=_CONTACT_US;?></a></div>
+						<div class="swiper-slide"><a href="<?=$_URL;?>products/checkserial"><?=_CHECK_SERIAL;?></a></div>
 					</div>
 					<div class="swiper-bar-next swiper-arrow rht"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
 				</div>
