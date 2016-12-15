@@ -1,5 +1,5 @@
 body {
-  	font-family: 'ee88-rg', 'Open Sans', Arial, sans-serif;
+  	font-family: 'ee88-rg', sans-serif;
     font-size: 15px;
 }
 
@@ -100,7 +100,6 @@ a.btn2:hover {
     font-weight: 700;
     line-height: 14px;
     color: #111;
-    letter-spacing: 2px;
     font-family: 'ee88-rg', sans-serif;
 }
 
@@ -241,10 +240,6 @@ a.btn2:hover {
 	float: right;
 }
 
-.body_contain {
-	margin-top: 20px;
-}
-
 #wrap #fixo_content {
     position: relative;
     padding: 0;
@@ -259,7 +254,6 @@ a.btn2:hover {
 #fixoMainSlide {
     position: relative;
     margin: 0 0 3.1%;
-	margin-bottom: 5%;
 }
 
 #fixoMainSlide .swiper-slide-container img {
@@ -442,6 +436,83 @@ a.btn2:hover {
 #fixoSlide .flex-control-nav li a.flex-active {
     background: #424242;
 }
+
+.none_blank {
+    font-size: 0;
+    letter-spacing: -3px;
+    line-height: 0;
+}
+
+.clear {
+    *zoom:1}
+
+.clear:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.area_ban img {
+    width: 100%;
+    height: auto;
+}
+
+.area_ban a {
+    display: block;
+}
+
+.area_ban ul {
+    margin: auto;
+	margin-bottom:2.3%;
+    position: relative;
+}
+
+.area_ban li {
+    float: left;
+    width: 26.7%;
+    margin: 0 0 20px 2.5%;
+    position: relative;
+}
+
+.area_ban li:first-child {
+    margin-left: 0;
+}
+
+.area_ban li.ban_big {
+    width: 41.6%;
+}
+
+.area_ban .last_ban {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.area_ban li .txt {
+    position: absolute;
+    bottom: -20px;
+    left: 5%;
+    z-index: 2;
+    width: 90%;
+    height: 20px;
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.area_ban li .bg {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 20px;
+    background: #000;
+    opacity: 0.3;
+}
+
 
 .flex-direction-nav a:before {
     content: '';
@@ -1559,7 +1630,25 @@ address p.design,address p.design a {
     color: #353535;
 }
 
+.body_contain {
+	margin-top: 20px;
+}
 
+.cn01 {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cn02 {
+    width: 100%;
+    height: 650px;
+    background: #fafaeb;
+    float: left;
+    margin-top: 100px;
+    text-align: center;
+}
 
 @media (max-width: 767px) {
 	

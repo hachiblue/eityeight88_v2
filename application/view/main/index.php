@@ -5,19 +5,69 @@
 
 	<div id="fixoMainSlide" class="hidden-md hidden-lg">
 		<div class="swiper-slide-container swiper-container-horizontal">
-		  <div class="swiper-wrapper">
-			
-			<div class="swiper-slide">
-				<a href="#">
-					<img src="<?=URL;?>img/banner.jpg" alt="메인이미지02">
-				</a>
+			<div class="swiper-wrapper">
+
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="<?=URL;?>img/banner.jpg">
+					</a>
+				</div>
 			</div>
+			
+			<div class="swiper-pagination"></div>
 
 		</div>
 
-		<div class="swiper-pagination"></div>
+		
+	</div>
+	
+	<div class="col-xs-12 area_ban none_blank hidden-md hidden-lg">
+		<ul class="clear pd0">
+			<li class="ban_big">
+				<a href="#">
+					<img src="http://placehold.it/500/f5d8dd/555?text=Sample">
+				</a>
+				<div class="txt">SALE</div>
+				<span class="bg"></span>
+			</li>
+			<li>
+				<img src="http://placehold.it/175/fff/555?text=Sample">
+				<div class="txt">LIP</div>
+				<span class="bg"></span>
+			</li>
+			<li>
+				<img src="http://placehold.it/175/dceaeb/555?text=Sample">
+				<div class="txt">EYE</div>
+				<span class="bg"></span>
+			</li>
+		</ul>
+		<ul class="clear pd0">
+			<li>
+				<img src="http://placehold.it/175/fff/555?text=Sample">
+				<div class="txt">FACE</div>
+				<span class="bg"></span>
+			</li>
+			<li>
+				<a href="">
+					<img src="http://placehold.it/175/fff/555?text=Sample">
+				</a>
+				<div class="txt">SKIN</div>
+				<span class="bg"></span>
+			</li>
+			<li class="last_ban ban_big">
+				<a href="">
+					<img src="http://placehold.it/500/f6f6f4/555?text=Sample">
+				</a>
+				<div class="txt">ACC&amp;TOOL</div>
+				<span class="bg"></span>
+			</li>
+		</ul>
 	</div>
 
+	<div class="col-xs-12 none_blank hidden-md hidden-lg" style="height:500px;background:#fafaeb;">
+	
+	</div>
+	
 </div>
 
 <div id="fixoSlide" class="flexslider hidden-xs hidden-sm">
@@ -51,6 +101,44 @@
 
 
 <div class="body_contain">
+
+	
+	<div class="row hidden-xs hidden-sm">
+
+		<div class="col-xs-12 text-center">
+			<div class="tit_area">
+				<h2>BEST&nbsp;<span>Title</span></h2>
+				<span class="subTit">This product is the best in every respect.</span>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="cn01 hidden-xs hidden-sm">
+		
+		<div class="container cube">
+
+			<div class="col-sm-12 col-md-6 pd0" style="height:390px;background:#f5d8dd">
+				<!-- <a href="#" class="conBox_001">
+					<img src="http://placehold.it/550x390/f5d8dd/555">
+				</a> -->
+			</div>
+
+			<div class="col-sm-12 col-md-6 pd0">
+				<div class="col-md-6" style="height:130px;background:#fff;"></div>
+				<div class="col-md-6" style="height:130px;background:#f9f0f5;"></div>
+				<div class="col-md-6" style="height:130px;background:#daeaea;"></div>
+				<div class="col-md-6" style="height:130px;background:#fff;"></div>
+				<div class="col-md-6" style="height:130px;background:#fff;"></div>
+				<div class="col-md-6" style="height:130px;background:#f9f9f9;"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cn02 hidden-xs hidden-sm">
+		
+	</div>
+
 
 	<div class="row">
 

@@ -32,6 +32,13 @@
 			<p class="num_tel"><a href="tel:+668 5551 6196">+668 5551 6196</a></p>
 		</div>
 
+		<div class="xans-element- xans-layout xans-layout-info cs_center ">
+			<a href="?view_desktop=true" style="cursor:pointer;">
+				<div class="h4"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+				<h6>PC VER.</h6>
+			</a>
+		</div>
+
 		<div class="line"></div>
 
 	</div>
