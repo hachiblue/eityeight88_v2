@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Class Main
+ * Class Products
  *
  * Please note:
  * Don't use the same name for class and method, as this might trigger an (unintended) __construct of the class.
  * This is really weird behaviour, but documented here: http://php.net/manual/en/language.oop5.decon.php
  *
  */
-class Main extends Controller
+class About extends Controller
 {
     /**
      * PAGE: index
@@ -18,11 +18,10 @@ class Main extends Controller
     {
 		$_URL = URL . $_SESSION["Lang"] . "/";
 		
-		$products = $this->model->getproducts();
-        $banner = $this->model->getbanner("Home");
+		$txtaboutus = $this->model->getaboutus();   
 
         // load views
-		$content = 'view/main/index.php';
+		$content = 'view/about/index.php';
         require APP . 'view/_templates/layout.php';
     }
     	

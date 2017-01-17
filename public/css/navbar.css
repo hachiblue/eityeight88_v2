@@ -28,8 +28,8 @@ header{
 	line-height: 40px;
     display: inline-block;
     width: 100px;
-    font-family: NanumGothicBold,Malgun Gothic,Dotum,applegothic,sans-serif,arial;
-    font-size: 13px;
+    font-family: 'ee88-rg',sans-serif,arial;
+    font-size: 16px;
     color: #9c9b9b;
     text-align: center;
 }
@@ -186,14 +186,28 @@ header .inner li a.txt{
 	text-align: center;
 	color: #222;
 	font-weight: 400;
-	font-size: 10px;
+	font-size: 13px;
 	letter-spacing: 1px;
 }
 
+.swiper-button-black {
+	background-color: #333;
+}
+
+.swiper-arrow {
+    position: absolute;
+    top: 8px;
+	z-index: 3;
+	color:#cfcfcf;
+}
 
 #fixoHeader {
 	left: 0;
 	top: 0;
 	width: 100%;
 	z-index: 200;
+}
+
+.swiper {
+	text-transform: uppercase;
 }

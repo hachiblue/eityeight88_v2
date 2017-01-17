@@ -65,3 +65,6 @@ define("_INGREDIENTS", "ส่วนประกอบสำคัญ");
 define("_LINE", "รับข่าวสารผ่านไลน์");
 define("_EMAIL_US", "ส่งอีเมลถึงเรา");
 define("_PHONE", "หมายเลขโทรศัพท์");
+define("_PRODUCT_ITEM", "Product Item");
+define("_HAVE", "มี");
+define("_SHADES_IN_A_BOX", "เฉดสี ใน 1 กล่อง");

@@ -19,6 +19,7 @@
 <script type="text/javascript">
 <!--
 	var _URL = '<?=$_URL;?>';
+	
 
 	$(document).ready(function () {
 		//initialize swiper when document ready  
@@ -26,8 +27,8 @@
 			loop: true,
 			slidesPerView: 3,
 			spaceBetween: 30,
-			nextButton: '.swiper-button-next',
-			prevButton: '.swiper-button-prev'
+			nextButton: '.swiper-bar-next',
+			prevButton: '.swiper-bar-prev'
 		})      
 		
 		var swiper_slide = new Swiper('.swiper-slide-container', {
@@ -84,6 +85,54 @@
 			$(".right_content").stop().animate({"right": "0", "opacity": "1"}, 3000, "easeOutQuad");
 		}
 
+		
+		/*
+		$("#fixoHeader .section .top .inner").mouseenter(function() {
+			$(this).stop().animate({"height":"250px"}, 400, "easeInOutExpo");
+		}).mouseleave(function(){
+			$(this).stop().animate({"height":"60px"}, 400, "easeInOutExpo");
+		});
+		*/
+
+		$(window).scroll(function() {
+			if($(this).scrollTop() > 130) {
+				$("#fixoHeader .section .top").css({"position":"fixed"});
+			} else {
+				$("#fixoHeader .section .top").css({"position":"relative"});
+			}
+		});
+
+		if( $("#btn-chkall-serial").length )
+		{
+			$("#btn-chkall-serial").click(function(){
+
+				chk_serial_all( $("#input-serial").val() );
+
+			});
+			
+		}
+
+		var chk_serial_all = function(data)
+		{
+			$.post(_URL+"products/ajax_chkserial_all", { pdata : data }, function(msg) {
+				
+				if( msg.FAKE )
+				{
+					$('#isfake').modal('show');
+				}
+				else if( msg.DUP )
+				{
+					$('#isdup').modal('show');
+				}
+				else if( !msg.FAKE )
+				{
+					$('#isreal').modal('show');
+					//alert( "This is " + msg.PRODNAME )
+				}
+				
+
+			}, 'json');
+		};
 
 	});
 

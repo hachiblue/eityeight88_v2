@@ -3,7 +3,18 @@
 <head>
 
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<?php
+	if( isset($_GET['view_desktop']) && $_GET['view_desktop'] )
+	{
+		echo '<meta name="viewport" content="width=1024">';
+	}
+	else
+	{
+		echo '<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">';
+	}
+	?>
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="Generator" content="EditPlus">
 	<meta name="Author" content="OM">
